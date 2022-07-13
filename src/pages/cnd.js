@@ -33,8 +33,21 @@ export default function Cnd() {
       </div>
       {dados.razao_social}
       <div className="flex flex-col mt-20 gap-2">
-        <Link href={`https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Consultar?ni=${cnpj}&TipoPesquisa=1&PeriodoInicio=2022-01-13&PeriodoFim=${ano}-${mesA}-${dia}`}><a target="_blank" rel="nofollow" className="text-blue-700 bg-green-300 px-5 py-1 rounded-lg hover:underline">Consultar CND Federal</a></Link>
-        <Link href={`https://internet-consultapublica.apps.sefaz.ce.gov.br/certidaonegativa/consultarPdf?tipoDevedor=2&codigoDevedor=${cnpj}`}><a target="_blank" rel="nofollow" className="text-blue-700 bg-green-300 px-5 py-1 rounded-lg hover:underline">Baixar CND Estadual CE</a></Link>
+        <Link href={`https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Consultar?ni=${cnpj}&TipoPesquisa=1&PeriodoInicio=2022-01-13&PeriodoFim=${ano}-${mesA}-${dia}`}>
+          <a target="_blank" rel="nofollow" className="text-blue-700 bg-green-300 px-5 py-1 rounded-lg hover:underline">
+            Consultar CND Federal
+          </a>
+        </Link>
+        <Link href={`https://internet-consultapublica.apps.sefaz.ce.gov.br/certidaonegativa/consultarPdf?tipoDevedor=2&codigoDevedor=${cnpj}`}>
+          <a target="_blank" rel="nofollow" className="text-blue-700 bg-green-300 px-5 py-1 rounded-lg hover:underline">
+            Baixar CND Estadual CE
+          </a>
+        </Link>
+        <Link href={`https://api.sam.pacatuba.gerentemunicipal.com.br/api/certidaoNegativaPorDocumento/${cnpj}`}>
+          <a target="_blank" rel="nofollow" className="text-blue-700 bg-green-300 px-5 py-1 rounded-lg hover:underline">
+            Baixar CND PACATUBA-CE
+          </a>
+        </Link>
       </div>
     </div>
   )
