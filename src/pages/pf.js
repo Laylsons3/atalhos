@@ -63,14 +63,7 @@ function Pf() {
                             </a>
                         </div>
                     </div>
-                    <div className='bg-green-700 col-span-1 py-2 rounded-lg text-green-50'>
-                    <p className='textoA'>CRF FGTS</p>
-                        <div className='flex justify-center gap-1 my-2'>
-                            <a target="_blank" rel="noreferrer" href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf">
-                                <input id="botao" className='bg-cyan-300 hover:bg-cyan-400 rounded-md text-black py-1 w-32 hover:cursor-pointer' type="button" value="Emitir/Validar"></input>
-                            </a>
-                        </div>
-                </div>
+                    
                 <div className='bg-green-700 col-span-1 py-2 rounded-lg text-green-50'>
                     <p className='textoA'>CND Trabalhista</p>
                         <div className='flex justify-center gap-1 my-2'>

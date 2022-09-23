@@ -178,7 +178,7 @@ function Home() {
           </div>
         </div>
         <footer className='text-[8pt] mr-2 mt-1 text-right'>
-            v 3.0
+            v1.3
         </footer>
     </div>
     )
