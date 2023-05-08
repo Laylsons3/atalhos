@@ -74,7 +74,7 @@ function Home() {
 
       <header className="flex justify-center">
         <h2 className="text-2xl text-center font-bold">
-          EMISSÃO E VALIDAÇÃO DE CERTIDÕES
+          <Link href="/whats">EMISSÃO </Link>E VALIDAÇÃO DE CERTIDÕES
         </h2>
       </header>
       <div className="absolute text-xs right-20 flex gap-x-2">
