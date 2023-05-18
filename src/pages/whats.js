@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 
 const Whats = () => {
   const [whatsapp, setWhatsapp] = useState("");
-  const code = `https://web.whatsapp.com/send?phone=55${whatsapp}`;
+  const codeWeb = `https://web.whatsapp.com/send?phone=55${whatsapp}`;
+  const codePhone = `https://api.whatsapp.com/send?phone=55${whatsapp}`;
   const router = useRouter();
 
   const [isVisible, setIsVisible] = useState(false);
@@ -53,12 +54,12 @@ const Whats = () => {
         {isVisible && (
           <div className="flex flex-col justify-center gap-y-4">
             <div className="flex hover:underline justify-center">
-              <Link target="_blank" rel="noopener noreferrer" href={code}>
+              <Link target="_blank" rel="noopener noreferrer" href={codeWeb}>
                 Chamar no Whatsapp
               </Link>
             </div>
             <div className="flex justify-center">
-              <QRCode value={code} />
+              <QRCode value={codePhone} />
             </div>
           </div>
         )}
